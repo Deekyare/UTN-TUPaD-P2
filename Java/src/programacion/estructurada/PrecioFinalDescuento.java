@@ -19,13 +19,13 @@ public class PrecioFinalDescuento {
     public static void main(String[] args) {
         Scanner valoresIngresados = new Scanner(System.in);
         // Solicitud de valores necesarios
-        System.out.println("Ingrese el precio del producto");
+        System.out.println("Ingrese el precio del producto base");
         double precioBase = Double.parseDouble(valoresIngresados.nextLine());
 
-        System.out.println("Ingrese el porcentaje de impuestos: ");
+        System.out.println("Ingrese el impuesto en porcentaje (Ejemplo: 10 para 10%):  ");
         double impuestos = Double.parseDouble(valoresIngresados.nextLine());
 
-        System.out.println("Introduzca el porcentaje de descuento");
+        System.out.println("Ingrese el descuento en porcentaje (Ejemplo: 5 para 5%): ");
         int descuento = Integer.parseInt(valoresIngresados.nextLine());
 
         //Convertir los valores impuestos y descuento a decimal, para luego realizar la cuenta correcta
@@ -36,7 +36,7 @@ public class PrecioFinalDescuento {
         double precioFinal = calcularPrecioFinal(precioBase, impuestoFinal, descuentoFinal);
 
         // Mostrar el resultado
-        System.out.println("El precio final es: $" + precioFinal);
+        System.out.println("El precio final del producto es: $" + precioFinal);
         }
 
 // Metodo que calcula el precio final
