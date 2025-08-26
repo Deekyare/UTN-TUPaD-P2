@@ -1,4 +1,4 @@
-package introduccion.poo.RegistroMascotas;
+package introduccionPoo.RegistroMascotas;
 
 /*
 Registro de Mascotas

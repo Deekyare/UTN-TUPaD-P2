@@ -1,4 +1,4 @@
-package introduccion.poo.RegistroMascotas;
+package introduccionPoo.RegistroMascotas;
 
 public class mascotaMain {
     public static void main(String[] args) {

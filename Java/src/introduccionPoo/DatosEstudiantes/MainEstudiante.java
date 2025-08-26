@@ -1,4 +1,4 @@
-package introduccion.poo.DatosEstudiantes;
+package introduccionPoo.DatosEstudiantes;
 /*
 Tarea: Instanciar a un estudiante, mostrar su información, aumentar y disminuir
 calificaciones.
