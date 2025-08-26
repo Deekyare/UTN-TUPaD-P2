@@ -15,6 +15,10 @@ public class Mascota {
 
     //Métodos
     void mostrarInfo(){
-        System.out.println("Nombre: " + nombre + "\nEspecie: " + especie + "\nEdad: " + edad);
+        System.out.println("\n---Información de la mascota ---\n"+ "\nNombre: " + nombre + "\nEspecie: " + especie + "\nEdad: " + edad+ "\n-------------------");
+    }
+    void cumplirAnios(int anios){
+        edad = edad + anios;
+        System.out.println("Han pasado "+ anios + " años");
     }
 }

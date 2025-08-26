@@ -22,6 +22,7 @@ public class Estudiante {
     void bajarCalificacion (int puntos){
         calificacion = calificacion - puntos;
         System.out.println( "La calificación con " + puntos + " puntos menos es de: " + calificacion);
-    }
 
+
+    }
 }
