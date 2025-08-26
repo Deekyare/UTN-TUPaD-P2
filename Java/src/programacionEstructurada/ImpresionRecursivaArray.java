@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 /*
 Impresión recursiva de arrays antes y después de modificar un elemento.
 Crea un programa que:

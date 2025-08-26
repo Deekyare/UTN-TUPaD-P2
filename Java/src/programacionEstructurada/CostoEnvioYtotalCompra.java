@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 /*Composición de funciones para calcular costo de envío y total de compra.
 
 a. calcularCostoEnvio(double peso, String zona): Calcula el costo de envío basado en la zona de envío (Nacional o Internacional)

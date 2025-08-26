@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*
 Contador de Positivos, Negativos y Ceros (for).

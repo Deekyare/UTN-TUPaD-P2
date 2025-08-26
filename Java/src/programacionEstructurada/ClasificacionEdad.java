@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*
 Clasificación de Edad.

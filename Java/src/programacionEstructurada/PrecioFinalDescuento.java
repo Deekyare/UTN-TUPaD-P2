@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*Cálculo del Precio Final con impuesto y descuento.
 Crea un metodo calcularPrecioFinal(double impuesto, double

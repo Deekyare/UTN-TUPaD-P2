@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*Calculadora de Descuento según categoría.
 Escribe un programa que solicite al usuario el precio de un producto y

@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*Modificación de un array de precios y visualización de resultados.
 Crea un programa que:

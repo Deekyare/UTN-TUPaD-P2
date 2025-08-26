@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*
 Actualización de stock a partir de venta y recepción de productos.

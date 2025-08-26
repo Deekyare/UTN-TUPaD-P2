@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*Cálculo de descuento especial usando variable global.
 Declara una variable global Ejemplo de entrada/salida: = 0.10.

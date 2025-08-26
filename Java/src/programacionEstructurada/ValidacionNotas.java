@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 /*Validación de Nota entre 0 y 10 (do-while).
 Escribe un programa que solicite al usuario una nota entre 0 y 10. Si el

@@ -1,4 +1,4 @@
-package programacion.estructurada;
+package programacionEstructurada;
 
 import java.util.Scanner;
 
