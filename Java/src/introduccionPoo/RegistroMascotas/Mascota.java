@@ -19,6 +19,7 @@ public class Mascota {
     }
     void cumplirAnios(int anios){
         edad = edad + anios;
+        //simular el paso del tiempo
         System.out.println("Han pasado "+ anios + " años");
     }
 }
