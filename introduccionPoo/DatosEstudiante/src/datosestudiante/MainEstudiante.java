@@ -1,7 +1,7 @@
 
 package datosestudiante;
 
-public class mainEstudiante {
+public class MainEstudiante {
     
   public static void main(String[] args) {
         //Creación e inicialización de la instancia "Estudiante"

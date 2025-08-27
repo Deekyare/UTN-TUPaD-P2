@@ -1,9 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
 package registromascotas;
 
-public class MainMascota {
+/**
+ *
+ * @author Sil
+ */
+public class MainRegistroMascotas {
+
     public static void main(String[] args) {
         //Creación e inicialización de la instancia "Mascotas"
-        Mascotas mascota1 = new Mascotas();
+        Mascota mascota1 = new Mascota();
         mascota1.nombre = "Orion";
         mascota1.especie = "Gato";
         mascota1.edad = 3;
@@ -13,4 +22,5 @@ public class MainMascota {
         mascota1.cumplirAnios(2);
         mascota1.mostrarInfo();
     }
+    
 }

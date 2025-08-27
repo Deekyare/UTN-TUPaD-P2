@@ -33,10 +33,5 @@ public class Libro {
         if (anioPublicacion >= 1500 && anioPublicacion <= anioActual){
             this.anioPublicacion = anioPublicacion;
         }
-
-
-
     }
-
-
 }

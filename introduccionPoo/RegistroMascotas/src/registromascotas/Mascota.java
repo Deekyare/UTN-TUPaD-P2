@@ -8,7 +8,7 @@ Tarea: Crear una mascota, mostrar su información, simular el paso del tiempo y
 verificar los cambios.
 */
 
-public class Mascotas {
+public class Mascota {
     String nombre;
     String especie;
     int edad;

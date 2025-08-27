@@ -9,5 +9,4 @@ out/
 */**/.DS_Store
 */**/build
 */**/dist
-*/**/nbproject
 */**/lib
