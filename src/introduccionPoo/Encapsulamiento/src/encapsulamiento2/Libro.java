@@ -1,5 +1,4 @@
-package introduccionPoo.Encapsulamiento;
-
+package encapsulamiento2;
 /*
 Crear una clase Libro con atributos privados: titulo, autor,
 añoPublicacion.
@@ -10,7 +9,7 @@ uno válido, mostrar la información final.
 */
 
 public class Libro {
-    //Atributos privados
+//Atributos privados
     private String titulo = "Harry Potter";
     private String autor = "J.K. Rowling";
     private int anioPublicacion = 1997;

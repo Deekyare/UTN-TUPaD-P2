@@ -1,4 +1,5 @@
-package introduccionPoo.DatosEstudiantes;
+
+package datosestudiante;
 /*
 Crear una clase Estudiante con los atributos: nombre, apellido, curso, calificación
 Métodos requeridos: mostrarInfo(), subirCalificacion(puntos),

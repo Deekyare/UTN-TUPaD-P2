@@ -1,12 +1,17 @@
-package introduccionPoo.NaveEspacial;
+
+package naveespacial;
 
 public class MainNaveEspacial {
-    public static void main() {
+
+  
+    public static void main(String[] args) {
+        //Creación e inicialización de la instancia "NaveEspacial"
         NaveEspacial naveEspacial1 = new NaveEspacial();
 
         naveEspacial1.nombre = "Galactica";
         naveEspacial1.combustible = 50;
 
+        //Llamadas a los métodos
         naveEspacial1.despegar();
         naveEspacial1.mostrarEstado();
         naveEspacial1.avanzar(50);
@@ -15,4 +20,5 @@ public class MainNaveEspacial {
         naveEspacial1.mostrarEstado();
 
     }
+    
 }

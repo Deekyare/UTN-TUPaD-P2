@@ -1,4 +1,4 @@
-package introduccionPoo.NaveEspacial;
+package naveespacial;
 
 /*Simulación de Nave Espacial
 Crear una clase NaveEspacial con los atributos: nombre, combustible.

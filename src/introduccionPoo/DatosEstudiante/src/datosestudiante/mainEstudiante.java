@@ -1,10 +1,10 @@
-package introduccionPoo.DatosEstudiantes;
-/*
-Tarea: Instanciar a un estudiante, mostrar su información, aumentar y disminuir
-calificaciones.
-*/
-public class MainEstudiante {
-    public static void main(String[] args) {
+
+package datosestudiante;
+
+public class mainEstudiante {
+    
+  public static void main(String[] args) {
+        //Creación e inicialización de la instancia "Estudiante"
         Estudiante estudiante1 = new Estudiante();
         estudiante1.nombre = "Silvia";
         estudiante1.apellido = "Giardini";
@@ -16,3 +16,4 @@ public class MainEstudiante {
         estudiante1.subirCalificacion(1);
     }
 }
+

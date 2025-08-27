@@ -1,4 +1,4 @@
-package introduccionPoo.Encapsulamiento;
+package encapsulamiento2;
 
 /*
 Intentar modificar el año con un valor inválido y luego con
@@ -6,8 +6,11 @@ uno válido, mostrar la información final.
 */
 
 public class MainLibro {
-    public static void main(String[] args) {
-        Libro libro1 =  new Libro();
+    
+ public static void main(String[] args) {
+     
+        //Creación de la instancia "Libro"
+         Libro libro1 =  new Libro();
 
         libro1.getTitulo();
         libro1.getAutor();

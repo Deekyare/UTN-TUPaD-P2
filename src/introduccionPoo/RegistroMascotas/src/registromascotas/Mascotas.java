@@ -1,14 +1,14 @@
-package introduccionPoo.RegistroMascotas;
+package registromascotas;
 
 /*
 Registro de Mascotas
-a. Crear una clase Mascota con los atributos: nombre, especie, edad.
+a. Crear una clase Mascotas con los atributos: nombre, especie, edad.
 Métodos requeridos: mostrarInfo(), cumplirAnios().
 Tarea: Crear una mascota, mostrar su información, simular el paso del tiempo y
 verificar los cambios.
 */
 
-public class Mascota {
+public class Mascotas {
     String nombre;
     String especie;
     int edad;
