@@ -1,4 +1,4 @@
-package encapsulamiento2;
+package encapsulamiento;
 /*
 Crear una clase Libro con atributos privados: titulo, autor,
 añoPublicacion.

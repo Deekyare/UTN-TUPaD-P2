@@ -1,4 +1,4 @@
-package encapsulamiento2;
+package encapsulamiento;
 
 /*
 Intentar modificar el año con un valor inválido y luego con
