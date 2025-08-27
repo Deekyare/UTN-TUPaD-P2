@@ -4,3 +4,6 @@
 /Java/out
 /JavaApplication12/nbproject/private/
 out/
+.DS_Store
+*/.DS_Store
+*/**/.DS_Store
