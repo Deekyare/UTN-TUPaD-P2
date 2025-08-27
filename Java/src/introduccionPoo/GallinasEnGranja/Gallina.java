@@ -1,5 +1,11 @@
 package introduccionPoo.GallinasEnGranja;
 
+/*Crear una clase Gallina con los atributos: idGallina, edad,
+huevosPuestos.
+Métodos requeridos: ponerHuevo(), envejecer(), mostrarEstado().
+Tarea: Crear dos gallinas, simular sus acciones (envejecer y poner huevos), y
+mostrar su estado.*/
+
 public class Gallina {
     int idGallina;
     int edad;
