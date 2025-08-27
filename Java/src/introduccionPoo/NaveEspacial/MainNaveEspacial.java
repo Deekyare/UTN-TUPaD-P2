@@ -1,7 +1,7 @@
 package introduccionPoo.NaveEspacial;
 
 public class MainNaveEspacial {
-    static void main() {
+    public static void main() {
         NaveEspacial naveEspacial1 = new NaveEspacial();
 
         naveEspacial1.nombre = "Galactica";
