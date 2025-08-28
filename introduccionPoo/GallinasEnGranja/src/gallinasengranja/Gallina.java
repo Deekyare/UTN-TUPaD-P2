@@ -1,6 +1,6 @@
 package gallinasengranja;
 
-/*Crear una clase Gallina con los atributos: idGallina, edad,
+/*Crear una clase "Gallina" con los atributos: idGallina, edad,
 huevosPuestos.
 Métodos requeridos: ponerHuevo(), envejecer(), mostrarEstado().
 Tarea: Crear dos gallinas, simular sus acciones (envejecer y poner huevos), y
