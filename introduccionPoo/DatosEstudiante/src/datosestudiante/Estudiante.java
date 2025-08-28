@@ -1,11 +1,13 @@
 
 package datosestudiante;
+
 /*
-Crear una clase Estudiante con los atributos: nombre, apellido, curso, calificación
+Crear una clase "Estudiante" con los atributos: nombre, apellido, curso, calificación
 Métodos requeridos: mostrarInfo(), subirCalificacion(puntos),
 bajarCalificacion(puntos).
 Tarea: Instanciar a un estudiante, mostrar su información, aumentar y disminuir
 calificaciones.*/
+
 public class Estudiante {
     String nombre;
     String apellido;
