@@ -1,7 +1,7 @@
 package naveespacial;
 
 /*Simulación de Nave Espacial
-Crear una clase NaveEspacial con los atributos: nombre, combustible.
+Crear una clase "NaveEspacial" con los atributos: nombre, combustible.
 Métodos requeridos: despegar(), avanzar(distancia),
 recargarCombustible(cantidad), mostrarEstado().
 Reglas: Validar que haya suficiente combustible antes de avanzar y evitar que
