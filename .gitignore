@@ -10,3 +10,5 @@ out/
 */**/build
 */**/dist
 */**/lib
+/POO/POO/nbproject/private/
+/POO/gestionEmpleados/nbproject/private/
