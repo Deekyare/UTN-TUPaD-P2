@@ -8,8 +8,6 @@ public class Cliente {
 
     private String nombre;
     private int telefono;
-    //Referencia de asociación unidireccional: Cliente → Reserva (Cliente es contenedor)
-    private Reserva reserva;
 
     //Constructor
     public Cliente(String nombre, int telefono) {
@@ -34,14 +32,7 @@ public class Cliente {
         this.telefono = telefono;
     }
 
-    public Reserva getReserva() {
-        return reserva;
-    }
-
-    public void setReserva(Reserva reserva) {
-        this.reserva = reserva;
-    }
-
+ 
     @Override
     public String toString() {
         return "Cliente [Nombre = " + nombre + ", Teléfono = " + telefono + "]";

@@ -8,8 +8,6 @@ public class Mesa {
 
     private int numero;
     private int capacidad;
-    //Referencia de agregacion - reserva
-    private Reserva reserva;
 
     //Constructor
     public Mesa(int numero, int capacidad) {
@@ -32,14 +30,6 @@ public class Mesa {
 
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
-    }
-
-    public Reserva getReserva() {
-        return reserva;
-    }
-
-    public void setReserva(Reserva reserva) {
-        this.reserva = reserva;
     }
 
     @Override

@@ -8,11 +8,16 @@ public class Reserva {
 
     private String fecha;
     private String hora;
+    //Referencia Cliente - asociación bidireccional
+    private Cliente cliente;
+    //Referencia Mesa - agregacion
+    private Mesa mesa;
 
     //Constructor
-    public Reserva(String fecha, String hora) {
+    public Reserva(String fecha, String hora, Mesa mesa) {
         this.fecha = fecha;
         this.hora = hora;
+        this.mesa = mesa;
     }
 
     public String getFecha() {
@@ -29,6 +34,14 @@ public class Reserva {
 
     public void setHora(String hora) {
         this.hora = hora;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public void setMesa(Mesa mesa) {
+        this.mesa = mesa;
     }
 
     @Override

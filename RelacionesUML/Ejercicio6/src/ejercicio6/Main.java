@@ -8,13 +8,14 @@ public class Main {
 
     public static void main(String[] args) {
         // Crear los objetos
-        Cliente cliente1 = new Cliente("Silvia G", 1165656554);
-        Reserva reserva1 = new Reserva("25-09-2025", "20:30");
         Mesa mesa1 = new Mesa(2, 3);
+        Cliente cliente1 = new Cliente("Silvia G", 1165656554);
+        Reserva reserva1 = new Reserva("25-09-2025", "20:30", mesa1);
+       
 
         // Establecer las relaciones usando los setters
-        cliente1.setReserva(reserva1);
-        mesa1.setReserva(reserva1);
+        reserva1.setCliente(cliente1);
+        reserva1.setMesa(mesa1);
 
         // Verificaciónes a traves de la consola
         System.out.println("-- Información de la reserva --");

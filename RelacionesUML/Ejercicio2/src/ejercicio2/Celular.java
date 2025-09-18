@@ -16,10 +16,11 @@ public class Celular {
     private Bateria bateria;
 
     //constructor
-    public Celular(int imei, String marca, String modelo) {
+    public Celular(int imei, String marca, String modelo, Bateria bateria) {
         this.imei = imei;
         this.marca = marca;
         this.modelo = modelo;
+        this.bateria= bateria;
     }
     //Getters y Setters
     public void setMarca(String marca) {
@@ -36,10 +37,6 @@ public class Celular {
          if (usuario != null && usuario.getCelular() != this) {
             usuario.setCelular(this);
         }
-    }
-
-    public void setBateria(Bateria bateria) {
-        this.bateria = bateria;
     }
 
     public String getModelo() {

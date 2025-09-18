@@ -14,9 +14,10 @@ public class TarjetaDeCredito {
     private Banco banco;
 
     //Constructor
-    public TarjetaDeCredito(String numero, String fechaVencimiento) {
+    public TarjetaDeCredito(String numero, String fechaVencimiento, Banco banco) {
         this.numero = numero;
         this.fechaVencimiento = fechaVencimiento;
+        this.banco = banco;
     }
     //Setters y Getters
 

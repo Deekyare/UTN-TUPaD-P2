@@ -12,9 +12,10 @@ public class FirmaDigital {
     private Usuario usuario;
     
     //Constructor
-    public FirmaDigital(String codigoHash, String fecha) {
+    public FirmaDigital(String codigoHash, String fecha, Usuario usuario) {
         this.codigoHash = codigoHash;
         this.fecha = fecha;
+        this.usuario = usuario;
     }
     //Getters y Setters
 
@@ -34,6 +35,11 @@ public class FirmaDigital {
     public Usuario getUsuario() {
         return usuario;
     }
+
+    public void setCodigoHash(String codigoHash) {
+        this.codigoHash = codigoHash;
+    }
+
     
    
      @Override

@@ -8,11 +8,12 @@ public class Main {
 
     public static void main(String[] args) {
         // Crear los objetos
+        
         Banco banco1 = new Banco("Galicia", "30-11223344");
         
         Cliente cliente1 = new Cliente("Silvia Giar","36975662");
 
-        TarjetaDeCredito tarjeta1 = new TarjetaDeCredito("5468545165", "12/2028");
+        TarjetaDeCredito tarjeta1 = new TarjetaDeCredito("5468545165", "12/2028", banco1);
 
         // Establecer las relaciones usando los setters
         // Relación de gregación con clase Banco
