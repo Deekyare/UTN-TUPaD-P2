@@ -24,23 +24,23 @@ public class Inventario {
     }
 
 //Metodo para listar los productos
-  public String listarProductos() {
+    public String listarProductos() {
         if (productos.isEmpty()) {
-        return "El inventario no tiene productos.";
+            return "El inventario no tiene productos.";
+        }
+
+        // 2. Usar una variable String para acumular la lista
+        String lista = "";
+
+        // 3. Iterar y añadir información CONCISA a la cadena usando '+'
+        for (Producto producto : productos) {
+
+            // Acumulamos la información. '\n' es el salto de línea.
+            lista = lista + "\n- Nombre: " + producto.getNombre() + " - Categoria: " + producto.getCategoria();
+        }
+
+        return lista;
     }
-    
-    // 2. Usar una variable String para acumular la lista
-    String lista = "";
-    
-    // 3. Iterar y añadir información CONCISA a la cadena usando '+'
-    for (Producto producto : productos) {
-        
-        // Acumulamos la información. '\n' es el salto de línea.
-        lista = lista + "\n- " + producto.getNombre();
-    }
-    
-    return lista;
-}
 
 // Metodo para buscar un producto por id Y MOSTRARLO
     public Producto buscarProductoPorId(String id) {
@@ -159,7 +159,7 @@ public class Inventario {
 
         // imprimimos el resultado solo una vez, al finalizar el bucle
         if (productoConMayorStock != null) {
-            System.out.println("\n--- Tarea 8: Producto con Mayor Stock ---");
+
             System.out.println("El producto con mayor stock es:");
             productoConMayorStock.mostrarInfo();
         } else {
@@ -181,7 +181,7 @@ public class Inventario {
                 productosEnRango.add(p);
             }
         }
-        System.out.println("--- Productos con precio entre $" + min + " y $" + max + " ---");
+       
         if (productosEnRango.isEmpty()) {
             System.out.println("No se encontraron productos en este rango.");
         } else {

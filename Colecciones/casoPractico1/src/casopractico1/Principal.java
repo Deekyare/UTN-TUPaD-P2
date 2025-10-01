@@ -13,21 +13,27 @@ public class Principal {
         // 2. Crear al menos cinco productos (Tarea 1)
         Producto p1 = new Producto("E001", "Parlante", 250000.0, 15, CategoriaProducto.ELECTRONICA);
         Producto p2 = new Producto("ALIM01", "Azucar", 1200.0, 50, CategoriaProducto.ALIMENTOS);
-        Producto p3 = new Producto("R001", "Remeras", 4500.0, 30, CategoriaProducto.ROPA);
+        Producto p3 = new Producto("R001", "Remeras", 2500.0, 30, CategoriaProducto.ROPA);
         Producto p4 = new Producto("H001", "Juego de Sábanas", 7000.0, 20, CategoriaProducto.HOGAR);
         Producto p5 = new Producto("ALI02", "Leche", 1500.0, 80, CategoriaProducto.ALIMENTOS);
 
+        System.out.println("-- Agregar productos --");
         // Agregar los productos al inventario (Tarea 1)
         inventario1.agregarProducto(p1);
+        System.out.println("\n-Se agregó el producto: "+ "'"+p1.getNombre()+"'"+" al inventario");
         inventario1.agregarProducto(p2);
+        System.out.println("\n-Se agregó el producto: "+ "'"+p2.getNombre()+"'"+" al inventario");
         inventario1.agregarProducto(p3);
+        System.out.println("\n-Se agregó el producto: "+ "'"+p3.getNombre()+"'"+" al inventario");
         inventario1.agregarProducto(p4);
+        System.out.println("\n-Se agregó el producto: "+ "'"+p4.getNombre()+"'"+" al inventario");
         inventario1.agregarProducto(p5);
+        System.out.println("\n-Se agregó el producto: "+ "'"+p5.getNombre()+"'"+" al inventario");
 
         System.out.println("---------------------------------------------------");
         System.out.println(" CONSIGNA: Listar productos");
         System.out.println("---------------------------------------------------");
-        inventario1.listarProductos();
+        System.out.println(inventario1.listarProductos());
         System.out.println("---------------------------------------------------");
         System.out.println("CONSIGNA: Buscar un producto por ID y mostrar su información ");
         System.out.println("---------------------------------------------------");
@@ -39,7 +45,7 @@ public class Principal {
         System.out.println("---------------------------------------------------");
         System.out.println("CONSIGNA: Eliminar producto por Id y devolver restantes ");
         System.out.println("---------------------------------------------------");
-        inventario1.eliminarProducto("ALI0f2");
+        inventario1.eliminarProducto("ALI02");
         System.out.println("---------------------------------------------------");
         System.out.println("CONSIGNA: Actualizar Stock ");
         System.out.println("---------------------------------------------------");
