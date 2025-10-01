@@ -17,7 +17,7 @@ public enum CategoriaProducto {
         this.descripcion = descripcion;
     }
 
-    //Método público (Getter) para acceder al campo
+    //Getter para acceder a la descripción
     public String getDescripcion() {
         return descripcion;
     }

@@ -10,7 +10,7 @@ public class Principal {
         //Crear una instancia de Inventario
         Inventario inventario1 = new Inventario("inventario1");
 
-        // 2. Crear al menos cinco productos (Tarea 1)
+        // Crear al menos cinco productos (Tarea 1)
         Producto p1 = new Producto("E001", "Parlante", 250000.0, 15, CategoriaProducto.ELECTRONICA);
         Producto p2 = new Producto("ALIM01", "Azucar", 1200.0, 50, CategoriaProducto.ALIMENTOS);
         Producto p3 = new Producto("R001", "Remeras", 2500.0, 30, CategoriaProducto.ROPA);
@@ -18,7 +18,7 @@ public class Principal {
         Producto p5 = new Producto("ALI02", "Leche", 1500.0, 80, CategoriaProducto.ALIMENTOS);
 
         System.out.println("-- Agregar productos --");
-        // Agregar los productos al inventario (Tarea 1)
+        // Agregar los productos al inventario
         inventario1.agregarProducto(p1);
         System.out.println("\n-Se agregó el producto: "+ "'"+p1.getNombre()+"'"+" al inventario");
         inventario1.agregarProducto(p2);

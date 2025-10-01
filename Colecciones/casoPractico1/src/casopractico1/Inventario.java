@@ -35,7 +35,7 @@ public class Inventario {
         //Iterar y añadir información CONCISA a la cadena usando '+'
         for (Producto producto : productos) {
 
-            // Acumulamos la información. '\n' es el salto de línea.
+            // Acumulamos la información en lista
             lista = lista + "\n- Nombre: " + producto.getNombre() + " - Categoria: " + producto.getCategoria();
         }
 
@@ -181,7 +181,7 @@ public class Inventario {
                 productosEnRango.add(p);
             }
         }
-       
+
         if (productosEnRango.isEmpty()) {
             System.out.println("No se encontraron productos en este rango.");
         } else {
@@ -198,7 +198,6 @@ public class Inventario {
     public void mostrarCategoriasDisponibles() {
         System.out.println("--- Categorías de Productos Disponibles ---");
         for (CategoriaProducto categoria : CategoriaProducto.values()) {
-            // Imprime el nombre (ALIMENTOS, ROPA, etc.) y su descripción (getDescripcion())
             System.out.println("Categoría: " + categoria.name() + " | Descripción: " + categoria.getDescripcion());
         }
     }
