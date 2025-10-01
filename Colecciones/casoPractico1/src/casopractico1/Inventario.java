@@ -29,10 +29,10 @@ public class Inventario {
             return "El inventario no tiene productos.";
         }
 
-        // 2. Usar una variable String para acumular la lista
+        //Usar una variable String para acumular la lista
         String lista = "";
 
-        // 3. Iterar y añadir información CONCISA a la cadena usando '+'
+        //Iterar y añadir información CONCISA a la cadena usando '+'
         for (Producto producto : productos) {
 
             // Acumulamos la información. '\n' es el salto de línea.
@@ -90,10 +90,10 @@ public class Inventario {
             // Calcular el nuevo stock sumando la cantidadASumar
             int nuevoStock = stockActual + nuevaCantidad;
 
-            // 3. Establecer el nuevo stock en el producto
+            // Establecer el nuevo stock en el producto
             productoAactualizar.setCantidad(nuevoStock);
 
-            // 4. Imprimir la confirmación y el nuevo stock (¡lo que querías!)
+            //Imprimir la confirmación y el nuevo stock (¡lo que querías!)
             System.out.println("Stock actualizado para el ID: " + id);
             System.out.println("Se sumaron: " + nuevaCantidad + " unidades.");
             System.out.println("Stock actual: " + nuevoStock + " unidades.");
@@ -101,7 +101,7 @@ public class Inventario {
             return true;
 
         } else {
-            // 5. Caso de que el producto no exista
+            // Caso de que el producto no exista
             System.out.println("Producto con ID " + id + " no encontrado. Stock no actualizado.");
             return false;
         }
@@ -117,7 +117,7 @@ public class Inventario {
             // si la categoría del producto (p.getCategoria())
             //    es igual a la categoría que se busca (el parámetro 'categoria').
             if (p.getCategoria() == categoria) {
-                // 4. Si es igual, agregar 'p' a la lista productosFiltrados.
+                // Si es igual, agregar 'p' a la lista productosFiltrados.
                 productosFiltrados.add(p);
             }
         }
