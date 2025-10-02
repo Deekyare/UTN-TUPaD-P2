@@ -8,7 +8,7 @@ public class Curso {
 
     private String codigo;
     private String nombre;
-    //Cada Curso tiene 1 profesor responsable bidireccional. NO SE PASA POR CONSTRUUCTOR, SETTER CON VALIDACION
+    //Cada Curso tiene 1 profesor responsable bidireccional. No se pasa por constructor, Hay que poner un setter con validación
     private Profesor profesor;
 
     public Curso(String codigo, String nombre) {
@@ -16,7 +16,6 @@ public class Curso {
         this.nombre = nombre;
     }
 
-    //GETTERS Y SETTERS
     public Profesor getProfesor() {
         return profesor;
     }
@@ -41,11 +40,11 @@ public class Curso {
         // ROMPER EL VÍNCULO PREVIO (Sincronizar al profesor anterior)
         if (this.profesor != null) {
             // Le pedimos al antiguo profesor que se quite este curso de su lista.
-            // Esto previene que el antiguo profesor siga creyendo que dicta este curso.
+            // Esto previene que el antiguo profesor siga dictando este curso.
             this.profesor.eliminarCurso(this);
         }
 
-        // ESTABLECER EL NUEVO VÍNCULO LOCAL
+        // ESTABLECER EL NUEVO VÍNCULO
         // Asignamos el nuevo profesor (puede ser un objeto Profesor o null para romper el vínculo)
         this.profesor = nuevoProfesor;
 
@@ -59,7 +58,7 @@ public class Curso {
 
     //Muestra código, nombre y nombre del profesor (si tiene).
     public void mostrarInfo() {
-         // 1. Verificar si el profesor existe para evitar el error
+         // Verificar si el profesor existe para evitar el error
     String nombreProfesor;
     
     if (this.profesor != null) {
@@ -70,7 +69,7 @@ public class Curso {
         nombreProfesor = "Sin asignar";
     }
     
-    // 2. Imprimir la información usando la variable segura
+    // Imprimir la información usando lsa variable
     System.out.println("\nCódigo: " + this.getCodigo());
     System.out.println("Nombre: " + this.getNombre());
     System.out.println("Dictado por: " + nombreProfesor);

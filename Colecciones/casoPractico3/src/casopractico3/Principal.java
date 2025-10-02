@@ -19,8 +19,8 @@ public class Principal {
         //Crear cursos
         Curso curso1 = new Curso ("CUR01", "Geografia I");
         Curso curso2 = new Curso ("CUR02", "Diseño Moderno");
-        Curso curso3 = new Curso ("CUR03", "Cultura Otomano");
-        Curso curso4 = new Curso ("CUR04", "Imperio Bizantino");
+        Curso curso3 = new Curso ("CUR03", "Culturas Antiguas");
+        Curso curso4 = new Curso ("CUR04", "Historia Egipcia");
         Curso curso5 = new Curso ("CUR05", "Manualidades II");
 
         System.out.println("-- Agregación de Profesores --");

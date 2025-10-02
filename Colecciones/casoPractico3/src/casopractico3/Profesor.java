@@ -23,7 +23,7 @@ public class Profesor {
         this.cursos = new ArrayList<>();
     }
 
-    // Getter para Cursos (Necesario para ver la lista desde fuera)
+    // Getter para Cursos
     public ArrayList<Curso> getCursos() {
         return cursos;
     }
@@ -52,7 +52,6 @@ public class Profesor {
             this.cursos.add(c);
         }
         // Sincronización Inversa: Le decimos al curso quién es su profesor.
-        // El setProfesor del Curso se encarga de evitar el bucle.
         c.setProfesor(this);
 
     }
@@ -74,10 +73,10 @@ public class Profesor {
             return "No hay cursos registrados.";
         }
 
-        // 2. Usar una variable String para acumular la lista
+        // Usar una variable String para acumular la lista
         String listaCursos = "";
 
-        // 3. Iterar y añadir información CONCISA a la cadena usando '+'
+        // Iterar y añadir información a la cadena
         for (Curso curso : cursos) {
             // Asegúrate de separar código y nombre y usar los getters
             listaCursos += "\n- " + curso.getCodigo() + ": " + curso.getNombre();

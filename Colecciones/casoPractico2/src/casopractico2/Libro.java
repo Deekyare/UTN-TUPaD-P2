@@ -41,12 +41,12 @@ public class Libro {
     
     //Metodos, muestra titulo, isbn,anio y autor
     public void mostrarInfo() {
-        System.out.println("Libro: ISBN: " + isbn + ", titulo: " + titulo + ", anioPublicacion: " + anioPublicacion+ ", autor: " + autor );
+        System.out.println("Libro: ISBN: " + isbn + ", Título: " + titulo + ", Año de Publicación: " + anioPublicacion + autor + "\n" );
     }
 
     @Override
     public String toString() {
-        return "Libro: " + "ISBN=" + isbn + ", titulo=" + titulo + ", anioPublicacion=" + anioPublicacion + ", autor=" + autor;
+        return "Libro: " + "ISBN:" + isbn + ", Título:" + titulo + ", Año de Publicación:" + anioPublicacion + autor;
     }
 
     

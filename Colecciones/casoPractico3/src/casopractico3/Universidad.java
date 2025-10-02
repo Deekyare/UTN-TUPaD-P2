@@ -71,7 +71,7 @@ public class Universidad {
                     + " - Cursos que dicta: " + p.getCursos().size() + "\n";
         }
 
-        // 4. Devolver la cadena completa
+        // Devolver la cadena completa
         return listado;
     }
 
@@ -126,9 +126,9 @@ public class Universidad {
         } else {
             System.out.println("Error: Curso con código " + codigo + " no encontrado.");
         }
-    }
+    };
 
-    ;
+    
             
     //Antes de remover, dejar null los cursos que dictaba.
     public void eliminarProfesor(String id) {
@@ -138,7 +138,7 @@ public class Universidad {
             // Antes de remover, romper la relación con TODOS sus cursos
             ArrayList<Curso> cursosDictados = profesorAeliminar.getCursos();
 
-            // Recorremos una COPIA de la lista o usamos un bucle inverso
+            // Recorremos una copia de la lista o usamos un bucle inverso
             // para evitar errores al modificar la lista original durante el bucle.
             for (int i = cursosDictados.size() - 1; i >= 0; i--) {
                 Curso c = cursosDictados.get(i);
@@ -146,7 +146,7 @@ public class Universidad {
                 c.setProfesor(null);
             }
 
-            // 2. Eliminar el profesor de la lista de la Universidad
+            // Eliminar el profesor de la lista de la Universidad
             this.profesores.remove(profesorAeliminar);
             System.out.println("\nProfesor " + profesorAeliminar.getNombre() + " eliminado exitosamente.");
 

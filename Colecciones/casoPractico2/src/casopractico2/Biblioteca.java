@@ -35,14 +35,16 @@ public class Biblioteca {
             return "La biblioteca no tiene libros registrados.";
         }
 
-        // 2. Usar una variable String para acumular la lista
+        // Usar una variable para acumular la lista
         String lista = "";
 
-        // 3. Iterar y añadir información CONCISA a la cadena usando '+'
+        // Iterar y añadir información CONCISA a la cadena usando '+'
         for (Libro libro : libros) {
 
-            // Acumulamos la información. '\n' es el salto de línea.
-            lista = lista + "\n- " + libro.getTitulo();
+            // Acumulamos la información. 
+            //lista = lista + "\n- " + libro.getTitulo();
+            libro.mostrarInfo();
+    
         }
 
         return lista;
@@ -70,18 +72,14 @@ public class Biblioteca {
             return "Fallo: Libro con ISBN " + isbn + " no encontrado. ";
         }
 
-        // Si SÍ se encontró, intentamos la eliminación:
+        // Si si se encontró, intentamos la eliminación:
         boolean fueEliminado = this.libros.remove(libroAeliminar);
 
         if (fueEliminado) {
             
-            System.out.println("\nEl Libro con ISBN " + isbn + " fue eliminado.\n");
-            this.listarLibros(); 
-
-            // Llamamos al listado 
-                    
-
-        }
+            System.out.println("\nEl Libro con ISBN " + "'"+isbn +"'"+ " fue eliminado.\n");
+             
+        }// Llamamos al listado 
         return this.listarLibros();
         
     }
@@ -94,9 +92,9 @@ public class Biblioteca {
         return contador;
     }
 
-    public String filtrarLibrosPorAnio(int anioBuscado) { // 1. Cambiamos la firma a String
+    public String filtrarLibrosPorAnio(int anioBuscado) { 
 
-        // 2Declaramos e inicializamos la variable lista como un String
+        // Declaramos e inicializamos la variable lista como un String
         String listaDeTitulos = "";
 
         boolean encontrado = false; 
