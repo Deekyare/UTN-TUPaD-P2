@@ -18,7 +18,7 @@ public class MainEcommerce {
         Producto producto2 = new Producto("Lavarropas", 800.0);
         
         // Crear pedido
-        Pedido pedido1 = new Pedido(Estados.PROCESANDO, cliente1);
+        Pedido pedido1 = new Pedido(cliente1, Estados.PROCESANDO);
         
         // Añadir productos al pedido
         pedido1.agregarProducto(producto1);
@@ -26,20 +26,29 @@ public class MainEcommerce {
         
         // Mostrar información de la compra
         System.out.println("\n -- INFORMACIÓN DE COMPRA --\n");
-        System.out.printf("El total de la compra realizada es de: ", pedido1.calcularTotal());
+        System.out.println(cliente1);
+        System.out.print("El total de la compra realizada es de: "+pedido1.calcularTotal() +"\n");
         
         // Cambiar estados del pedido
+        pedido1.cambiarEstado(Estados.PROCESANDO);
+        
+       // --- Procesar pago con Paypal ---
+        System.out.println("\n -- INFORMACIÓN DE COMPRA CON PAYPAL --\n");
+        Paypal pagoPaypal = new Paypal();
+        pagoPaypal.procesarPago(pedido1.calcularTotal()); 
+        
+        
+        System.out.println("\n\n-- Actualización --");
         pedido1.cambiarEstado(Estados.ENVIADO);
         
-        // Procesar pago con Paypal (con descuento)
-        Paypal pagoPaypal = new Paypal();
-        pagoPaypal.procesarPago(pedido1.calcularTotal());
-        System.out.printf("Monto con descuento inluido: "+ pagoPaypal.aplicarDescuento(pedido1.calcularTotal())+"\n");
+        // --- Procesar pago con Tarjeta  ---
+        System.out.println("\n -- INFORMACIÓN DE COMPRA CON TARJETA DE CREDITO --\n");
+        TarjetaDeCredito pagoTcredito = new TarjetaDeCredito();
+
+        pagoTcredito.procesarPago(pedido1.calcularTotal());
         
-        System.out.println("\n -- Actualización -- \n");
         
+        System.out.println("\n\n -- Actualización -- ");
         pedido1.cambiarEstado(Estados.ENTREGADO);
-        
-        
     }
 }

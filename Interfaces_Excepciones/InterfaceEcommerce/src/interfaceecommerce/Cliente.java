@@ -1,13 +1,14 @@
 package interfaceecommerce;
+
 /**
  *
  * @author Sil
  */
 public class Cliente implements Notificable {
+
     private String nombre;
     private String apellido;
     private String dni;
-    
 
     public Cliente(String nombre, String apellido, String dni) {
         this.nombre = nombre;
@@ -22,12 +23,16 @@ public class Cliente implements Notificable {
     public String getApellido() {
         return apellido;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "- Cliente -  " +"\nNombre: "+ nombre + ", \nApellido: " + apellido + ", \nDNI: " + dni + '.';
+    }
+
     
     //Sobreescribe el metodo notificar de Notificable
     @Override
-    public void notificar (String mensaje){
-        System.out.println("Cliente: "+ nombre +" "+ apellido + " Dni: "+ dni + mensaje);
-     }
+    public void notificar(String mensaje) {
+        System.out.println(mensaje);
+    }
 }

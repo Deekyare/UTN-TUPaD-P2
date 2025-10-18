@@ -8,13 +8,13 @@ import java.util.ArrayList;
  */
 public class Pedido implements Pagable {
 
-    private Estados estado;
-    private Cliente cliente;
+     private Cliente cliente;
+     private Estados estado;
     ArrayList<Producto> listaProductos;
 
-    public Pedido(Estados estado, Cliente cliente) {
-        this.estado = estado;
+    public Pedido(Cliente cliente, Estados estado) {
         this.cliente = cliente;
+        this.estado = estado;
         this.listaProductos = new ArrayList<>();
     }
 
